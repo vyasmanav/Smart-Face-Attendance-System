@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script src="assets/js/login-basic.js"></script>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <main-css></main-css>
+</head>
+<body>
+    <main-header></main-header>
+    
+    <div class="login-page padding-120 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h4>become an author</h4>
+                    <div class="login-form margin-top-30">
+                        <form>
+                            <div class="dropdown">
+                                <div>
+                                    <label for=""  style="font-size: 20px; color:black ; margin-right: 2px;">First Name</label>
+
+                                    <input type="text" required placeholder="First Name" id="first_name" name="first_name">
+                                    
+                                </div>
+                                <div>
+                                    <label for=""  style="font-size: 20px; color:black ; margin-right: 2px;">Middle Name</label>
+
+                                    <input type="text" placeholder="Middle Name" name="middle_name" id="middle_name">
+
+                                </div>
+                                <div>
+                                    <label for=""  style="font-size: 20px; color:black ; margin-right: 2px;">Last Name</label>
+
+                                    <input type="text" required placeholder="Last Name" name="last_name" id="last_name">
+
+
+                                </div>
+                            </div>
+                            <div>
+
+                                <label for=""  style="font-size: 20px; color:black ; margin-right: 2px;">Date Of Birth</label>
+                                <input type="date" required name="date_of_birth" id="date_of_birth" name="date_of_birth" >
+
+                            </div>
+                            <div class="dropdown">
+                                <div>
+                                    <label for=""  style="font-size: 20px; color:black ; margin-right: 2px;">Select Gender</label>
+
+                                </div>
+                                <div id="radio-button" style="display: flex;">
+                                    <label for="gender" >Male</label>
+                                    <input type="radio" required name="gender" value="M" id="male">
+                                    <label for="gender">Female</label>
+                                    <input type="radio" required name="gender" id="female" value="F">
+                                    <label for="gender">Other</label>
+                                    <input type="radio" required name="gender" value="O" id="other">
+                                </div>
+                            </div>
+                            <div>
+                                <label for=""  style="font-size: 20px; color:black ; margin-right: 2px;">Email Id</label>
+                                <input type="email" required placeholder="Email Address" name="email" id="email">
+
+
+                            </div>
+                            <div class="pass">
+                                <label for=""  style="font-size: 20px; color:black ; margin-right: 2px;">Password</label>
+
+                                <input type="password" class="pass" required placeholder="Set Password" name="password" id="password" >
+                            </div>
+                            <div class="cf">
+                                <label for=""  style="font-size: 20px; color:black ; margin-right: 2px;">Confirm Password</label>
+
+                                <input type="password" class="cf" required placeholder="Confirm Password" name="confirm_password" id="confirm_password">
+                            </div>
+                            <div>
+                                <label for=""  style="font-size: 20px; color:black ; margin-right: 2px;">Contact Number</label>
+                                <input type="number" required placeholder=" Contact No" name="contact_number" id="contact_number">
+
+
+                            </div>
+                            <div>
+                                <label for=""  style="font-size: 20px; color:black ; margin-right: 2px;">AddressLine 1</label>
+                                <input type="text" required placeholder="Address Line 1" name="address_line_1" id="address_line_1">
+
+                            </div>
+                            <div>
+                                <label for=""  style="font-size: 20px; color:black ; margin-right: 2px;">AddressLine 2</label>
+                                <input type="text" required placeholder="Address Line 2" name="address_line_2" id="address_line_2">
+
+                            </div>
+                            <div class="dropdown">
+                                <div>
+                                    <label for=""  style="font-size: 20px; color:black ; margin-right: 2px;">Landmark</label>
+                                    <input type="text" required placeholder="Landmark" name="landmark" id="landmark">
+
+                                </div>
+                                <div>
+                                    <label for=""  style="font-size: 20px; color:black ; margin-right: 2px;">Pincode Number</label>
+                                    <input type="number" required placeholder="Enter Pincode" name="pincode" id="pincode">
+
+                                </div>
+                            </div>
+                            <div class="collum-2">
+
+                              
+                                    <select name="state" class="select-value state_select" id="state" required onselect = state_handler>
+                                        <option value="">Select State</option>
+                                        <option value="Gujarat">Gujarat</option>
+                                        <option value="MP">MPs</option>
+                                    </select>
+    
+                                
+                                    <select name="city" class="select-value city_select" id="city" required >
+                                        <option value="">Select City</option>
+                                        <option value="Ahmedabad">Ahemdabad</option>
+                                        <option value="Surat">Surat</option>
+                                        <option value="Vadodata">Vadodara</option>
+                                        <option value="Kashmir">Kashmir</option>
+                                        <option value="Lahor">Lahor</option>
+                                    </select>
+                               
+                                    <select name="college" class="select-value college_select" id="college" required>
+                                        <option value="">Select College</option>
+                                        <option value="LJ">LJ</option>
+                                        <option value="Somlalit">Somlalit</option>
+                                        <option value="KS">KS</option>
+    
+                                    </select>
+                                
+                                    <select name="role" class="select-value" id="role" required>
+                                        <option value="">Select Role</option>
+                                        <option value="Faculty">Faculty</option>
+                                        <option value="Student">Student</option>
+                                        <option value="College-Admin">College Admin</option>
+                                    </select>
+                              
+                               
+                                 
+                            </div>
+                            <button type="submit" class="template-btn" id="submit">Sign Up</button>
+                            <div id="message"></div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <main-footer></main-footer>    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="assets/js/register.js"></script>
+</html>
