@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Attendance</title>
+    <script src="assets/js/college-admin-basic.js"></script>
+    <main-css></main-css>
+</head>
+<body>
+    <main-header></main-header>
+    <!-- Breadcrumb Section -->
+    <section class="breadcrumb-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Upload Attendance</h2>
+                    <ul>
+                        <li><a href="college-admin-home.html">home</a></li>
+                        <li>/</li>
+                        <li>Upload Attendance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Upload Page -->
+    <div class="login-page padding-120 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h4>Upload Attendance Image</h4>
+                    <div class="login-form margin-top-30">
+                        <form id="uploadForm" enctype="multipart/form-data">
+                            <div class="dropdown">
+                                <select name="timetable_id" class="select-value" id="timetable_dropdown" required>
+                                    <option value="">Select Lecture</option>
+                                </select>
+                            </div>
+                            <div class="dropdown">
+                                <input type="file" accept="image/*" id="imageInput" required>
+                            </div>
+                            <div class="message"></div>
+                            <button type="submit" class="template-btn">Upload</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main-footer></main-footer>
+    <!-- Javascript Files -->
+    <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/counterup.min.js"></script>
+    <script src="assets/js/vendor/waypoints.min.js"></script>
+    <script src="assets/js/vendor/easing.min.js"></script>
+    <script src="assets/js/vendor/meanmenu.min.js"></script>
+    <script src="assets/js/vendor/jquery.magnific-popup.js"></script>
+    <script src="assets/js/vendor/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="assets/js/upload-attendance.js"></script>
+</body>
+</html>
