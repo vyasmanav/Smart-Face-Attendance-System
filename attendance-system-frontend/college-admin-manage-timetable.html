@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>college-admin-timetable</title>
+    <script src="assets/js/college-admin-basic.js"></script>
+    <main-css></main-css>
+</head>
+<body>
+    <main-header></main-header>
+    <!-- Breadcrumb Section -->
+    <section class="breadcrumb-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Manage-Timetable</h2>
+                    <ul>
+                        <li><a href="college-admin-home.html">home</a></li>
+                        <li>/</li>
+                        <li>Manage-Timetable</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Register Page -->
+    <div class="login-page padding-120 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h4>Manage Timetable</h4>
+                    <div class="login-form margin-top-30">
+                        <form action="#">
+                            <div class="collum collum-2">
+                                <select name="" class="select-value" id="subject" required>
+                                    <option value="">Subject Name</option>
+                                   
+                                </select>
+                                <select name="" class="select-value" id="faculty" required>
+                                    <option value="">Faculty name</option>
+                                </select>
+                            </div>
+                            <div class="dropdown">
+                                <select name="" class="select-value" id="division" required>
+                                    <option value="">Division</option>
+                                </select>
+                                <select name="" class="select-value" id="semester" required>
+                                    <option value="">Semester</option>
+                                </select>
+                            </div>
+                            <div class="dropdown">
+                                <input type="number" placeholder="Room Number" id="room_number">
+                            </div>
+                            <div class="dropdown">
+                                <div class="label-field">
+                                    <label for="">Starting time:</label>
+                                    <input type="time" id="appt1" name="appt" placeholder="s">
+                                </div>
+                                <div class="label-field">
+                                    <label for="">Ending time:</label>
+                                    <input type="time" id="appt" name="appt">
+                                </div>
+                            </div>
+                            <input type="text" id="remark" placeholder="Remarks">
+                            <div class="dropdown">
+                                <button type="" id="update" class="template-btn update_timetable">Update</button>
+                                <button type="" id="delete" class="template-btn delete_timetable">Delete</button>
+                            </div>
+                        </form>
+                        <div class="message"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+   <main-footer></main-footer>
+    <!-- Javascript Files -->
+    <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/counterup.min.js"></script>
+    <script src="assets/js/vendor/waypoints.min.js"></script>
+    <script src="assets/js/vendor/easing.min.js"></script>
+    <script src="assets/js/vendor/meanmenu.min.js"></script>
+    <script src="assets/js/vendor/jquery.magnific-popup.js"></script>
+    <script src="assets/js/vendor/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="assets/js/college-admin-manage-timetable.js"></script>
+<script src="assets/js/pro-basic.js"></script>
+
+</body>
+
+
+<!-- Mirrored from scholarl.codebasket.net/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Dec 2022 15:37:05 GMT -->
+
+</html>
