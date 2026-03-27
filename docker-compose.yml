@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:6.0
+    container_name: smart_face_mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: smart_face_backend
+    restart: always
+    command: python backend/manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./backend:/app/backend
+    ports:
+      - "8000:8000"
+    environment:
+      - MONGODB_URI=mongodb://mongodb:27017/student_attendance
+      - DJANGO_SETTINGS_MODULE=rest.settings
+    depends_on:
+      - mongodb
+
+  frontend:
+    image: nginx:alpine
+    container_name: smart_face_frontend
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - ./attendance-system-frontend:/usr/share/nginx/html:ro
+
+volumes:
+  mongo_data:
